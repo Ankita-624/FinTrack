@@ -7,6 +7,11 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.WebHost.ConfigureKestrel(serverOptions =>
+{
+    serverOptions.ListenAnyIP(8080); // Required for Railway
+});
+
 
 // 1. Configure EF Core and Identity
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
