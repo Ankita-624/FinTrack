@@ -15,7 +15,8 @@ builder.WebHost.ConfigureKestrel(serverOptions =>
 
 // 1. Configure EF Core and Identity
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"))
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
+
 );
 
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
@@ -108,7 +109,4 @@ app.UseAuthentication(); // Add this before Authorization
 app.UseAuthorization();
 
 app.MapControllers();
-var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
-app.Urls.Add($"http://*:{port}");
-
 app.Run();
