@@ -1,34 +1,54 @@
-# 📘 FinTrack API
+# 💸 FinTrack – Secure Finance Tracker API (.NET + SQL Server)
 
-> A secure, production-ready personal finance backend API built with **ASP.NET Core 8**, featuring **JWT authentication**, **SQL Server integration**, and **Swagger UI** for testing. Track your income and expenses, securely manage users, and demonstrate backend excellence.
+**FinTrack** is a secure and modular backend API system for managing personal finances. It supports **JWT-based user authentication**, **CRUD operations** for transactions and budgets, and is built with **.NET Core**, **Entity Framework**, and **SQL Server**.
+
+This is a self-initiated personal project aimed at mastering backend development, API security, and database integration using Microsoft technologies.
 
 ---
 
 ## 🚀 Features
 
-- 🔐 **JWT Authentication** (Login & Register)
-- 📊 **Create, View Transactions** (Income / Expense)
-- 📂 **Role-based Authorization**
-- 🧩 **EF Core with SQL Server Express**
-- 📄 **Swagger UI** for seamless testing
-- 🛡️ **Secure password hashing**
-- ⚙️ **Clean architecture with separation of concerns**
+- 🔐 User Registration & Login (JWT Authentication)
+- 📊 CRUD operations for Income & Expenses
+- 🧮 Budget category management
+- 🗄️ SQL Server integration using Entity Framework Core
+- 📘 Swagger UI for complete API documentation
+- 🔐 Secure password hashing
+- 🔁 Role-based access & session management (future-ready)
+- 🌐 RESTful API design with proper route structure
 
 ---
 
-## 🛠 Tech Stack
+## ⚙️ Technologies Used
 
-| Layer        | Technology                        |
-|--------------|-----------------------------------|
-| Backend API  | ASP.NET Core 8                    |
-| Auth         | ASP.NET Core Identity + JWT       |
-| ORM          | Entity Framework Core             |
-| Database     | SQL Server Express                |
-| Docs & Test  | Swagger              |
+- [.NET 8](https://dotnet.microsoft.com/)
+- [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/)
+- [SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+- [JWT (JSON Web Tokens)](https://jwt.io/)
+- [Swagger / Swashbuckle](https://github.com/domaindrivendev/Swashbuckle.AspNetCore)
+- C#
+- RESTful API Principles
 
 ---
 
+
+## 📂 Project Structure
+```
+FinTrack/
+├── Controllers    # API Controllers
+├── DTOs             # Request/Response Models
+├── Models           # Entity Models
+├── Repositories     # Data Access Logic
+├── Migrations       # EF Core Migrations
+├── appsettings.json   # Configuration File
+└── Program.cs         # Entry Point
+```
 ## 📦 Installation
+
+### Prerequisites
+- [.NET SDK](https://dotnet.microsoft.com/download) (v8+)
+- [SQL Server Express](https://learn.microsoft.com/en-us/sql/sql-server/)
+- Visual Studio / VS Code
 
 ### 1️⃣ Clone the repository
 
@@ -97,6 +117,10 @@ Use protected routes like /api/Transactions
 
 ### 👤 Author
 Ankita Gouda
-
-
+```
+🔗 GitHub: Ankita-624
+🎓 Passionate Backend Developer | .NET Enthusiast | API Builder
+```
+### 📣 Reach Out / Collaborate
+If you're hiring or collaborating on backend/API projects — feel free to connect on LinkedIn or leave a ⭐ on the repo!
 
