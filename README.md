@@ -93,7 +93,7 @@ Use protected routes like /api/Transactions
 
 
 ### 📸 Screenshots
-
+![Swagger UI](./fintrack.png)
 
 ### 👤 Author
 Ankita Gouda
