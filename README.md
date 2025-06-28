@@ -1,4 +1,14 @@
+
 # 💸 FinTrack – Secure Finance Tracker API (.NET + SQL Server)
+
+![.NET](https://img.shields.io/badge/.NET-8.0-blueviolet)
+![CSharp](https://img.shields.io/badge/C%23-Backend-informational)
+![SQL Server](https://img.shields.io/badge/Database-SQL_Server-cc2927)
+![Swagger](https://img.shields.io/badge/API-Documented-blue)
+![JWT](https://img.shields.io/badge/Auth-JWT-green)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+
 
 **FinTrack** is a secure and modular backend API system for managing personal finances. It supports **JWT-based user authentication**, **CRUD operations** for transactions and budgets, and is built with **.NET Core**, **Entity Framework**, and **SQL Server**.
 
